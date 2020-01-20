@@ -1,5 +1,7 @@
 class Solution:
     def search(self, nums, target: int) -> int:
+        if len(nums)==0:
+            return -1
         left=0
         right=len(nums)-1
         while left<=right:#小于等于
